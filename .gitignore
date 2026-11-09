@@ -3,3 +3,4 @@
 node_modules/
 _failed.log
 serve-check.js
+.vercel
