@@ -1,0 +1,93 @@
+{
+  "label": "Dữ liệu mô phỏng – cập nhật 09/11/2026",
+  "updated": "2026-11-09",
+  "author": "HTK",
+  "hotline": "0396241674",
+  "context": "Mùa mưa lũ 2026: bão số 9, số 10 đổ bộ Quy Nhơn – Phù Cát – Hoài Nhơn, lũ sông Kôn dâng cao, ruộng muối Cát Minh và Cát Khánh bị phá hủy nặng.",
+  "villages": [
+    {
+      "id": "cat-minh",
+      "name": "Cát Minh",
+      "district": "Huyện Phù Cát",
+      "households": 420,
+      "areaHa": 185,
+      "outputTons2026": 6200,
+      "damagePercent": 78,
+      "status": "Ngưng sản xuất – khắc phục sau lũ",
+      "statusLevel": "danger",
+      "specialty": "Muối hạt trắng, muối hoa cà",
+      "note": "Ruộng muối ngập bùn sâu 30–50cm sau lũ sông Kôn 11/2026, kho muối tan mất trắng.",
+      "map": { "x": 455, "y": 175 }
+    },
+    {
+      "id": "cat-khanh",
+      "name": "Cát Khánh",
+      "district": "Huyện Phù Cát (ven đầm Đề Gi)",
+      "households": 365,
+      "areaHa": 160,
+      "outputTons2026": 5400,
+      "damagePercent": 72,
+      "status": "Ngưng sản xuất – khắc phục sau lũ",
+      "statusLevel": "danger",
+      "specialty": "Muối trắng Đề Gi, muối tinh",
+      "note": "Bão số 10/2026 phá bờ vùng, nước ngọt tràn vào ruộng làm loãng ô kết tinh.",
+      "map": { "x": 430, "y": 80 }
+    },
+    {
+      "id": "cat-hai",
+      "name": "Cát Hải",
+      "district": "Huyện Phù Cát (ven biển Cát Tiến)",
+      "households": 210,
+      "areaHa": 95,
+      "outputTons2026": 2900,
+      "damagePercent": 55,
+      "status": "Sản xuất hạn chế – sửa ruộng",
+      "statusLevel": "warn",
+      "specialty": "Muối biển thô, muối ngâm dưa cá",
+      "note": "Xói lở bờ biển Cát Tiến sau bão 2026 lấn vào một phần nền ruộng muối.",
+      "map": { "x": 505, "y": 265 }
+    },
+    {
+      "id": "nhon-hai",
+      "name": "Nhơn Hải",
+      "district": "TP. Quy Nhơn (bán đảo Phương Mai)",
+      "households": 120,
+      "areaHa": 48,
+      "outputTons2026": 1500,
+      "damagePercent": 35,
+      "status": "Đang phục hồi – hoạt động một phần",
+      "statusLevel": "warn",
+      "specialty": "Muối hoa thủ công, muối du lịch trải nghiệm",
+      "note": "Thiệt hại nhẹ hơn nhờ địa hình cao, đang đón khách trải nghiệm làm muối trở lại.",
+      "map": { "x": 615, "y": 445 }
+    },
+    {
+      "id": "xuan-tu",
+      "name": "Xuân Tự",
+      "district": "Huyện Tuy Phước (ven đầm Thị Nại)",
+      "households": 150,
+      "areaHa": 62,
+      "outputTons2026": 1800,
+      "damagePercent": 60,
+      "status": "Ngưng sản xuất – chờ rút lũ",
+      "statusLevel": "danger",
+      "specialty": "Muối nền đất sét, muối chế biến thực phẩm",
+      "note": "Lũ sông Kôn tràn qua Tuy Phước, ruộng ven đầm Thị Nại còn ngập úng đầu 11/2026.",
+      "map": { "x": 265, "y": 350 }
+    }
+  ],
+  "seasons": [
+    { "month": 1, "name": "Tháng 1", "type": "sun", "title": "Chuẩn bị vụ muối", "detail": "Cày ải, phơi nền ruộng, sửa bờ vùng sau Tết. Nắng nhẹ, bắt đầu dẫn nước biển vào ô chịu." },
+    { "month": 2, "name": "Tháng 2", "type": "sun", "title": "Mở vụ nắng", "detail": "Nắng đều, gió nồm nhẹ. Diêm dân rải nước, chăm ô kết tinh, thu lứa muối đầu năm." },
+    { "month": 3, "name": "Tháng 3", "type": "peak", "title": "Cao điểm vụ muối", "detail": "Nắng gắt, bốc hơi mạnh – năng suất cao nhất. Thu muối mỗi 3–5 ngày, ưu tiên muối hoa buổi sáng sớm." },
+    { "month": 4, "name": "Tháng 4", "type": "peak", "title": "Cao điểm vụ muối", "detail": "Tiếp tục đỉnh sản lượng. Thương lái thu mua mạnh, giá muối ổn định." },
+    { "month": 5, "name": "Tháng 5", "type": "peak", "title": "Cao điểm vụ muối", "detail": "Nắng nóng kéo dài, muối trắng nhanh. Chú ý bảo quản kho, tránh mưa dông bất chợt đầu mùa." },
+    { "month": 6, "name": "Tháng 6", "type": "sun", "title": "Cuối vụ nắng", "detail": "Nắng còn nhưng mưa dông tăng. Thu vét muối, gia cố kho trước mùa mưa bão." },
+    { "month": 7, "name": "Tháng 7", "type": "sun", "title": "Thu vét – trữ kho", "detail": "Giảm diện tích sản xuất, tập trung vận chuyển muối về kho cao, kê cao bao muối." },
+    { "month": 8, "name": "Tháng 8", "type": "sun", "title": "Kết thúc vụ – phòng bão", "detail": "Ngưng dần sản xuất. Chằng chống kho, di dời muối khỏi vùng trũng trước bão mùa thu 2026." },
+    { "month": 9, "name": "Tháng 9", "type": "storm", "title": "Mùa mưa lũ 2026 bắt đầu", "detail": "Mưa diện rộng, ngừng làm muối. Bão số 9/2026 đổ bộ Phù Cát – Quy Nhơn, tốc mái kho muối." },
+    { "month": 10, "name": "Tháng 10", "type": "storm", "title": "Bão số 10 – thiệt hại nặng", "detail": "Bão số 10/2026 phá bờ vùng Cát Khánh, xói lở Cát Tiến. Mất điện 3–7 ngày, bơm nước ngừng hoạt động." },
+    { "month": 11, "name": "Tháng 11", "type": "storm", "title": "Lũ sông Kôn – ngập ruộng muối", "detail": "Lũ dâng cao nhấn chìm ruộng muối Cát Minh, Xuân Tự. Ưu tiên cứu muối tồn kho, tiêu úng, gom bùn." },
+    { "month": 12, "name": "Tháng 12", "type": "storm", "title": "Khắc phục – chuẩn bị vụ 2027", "detail": "Cải tạo nền ruộng, đắp lại bờ vùng, chờ nắng để mở vụ muối mới. Kêu gọi kết nối tiêu thụ muối tồn." }
+  ]
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="HTK">
+  <meta name="last-updated" content="2026-11-09">
+  <meta name="description" content="Làng muối Bình Định 2026 - Cát Minh, Cát Khánh bị mưa lũ phá hủy. Kết nối tiêu thụ muối, lịch sản xuất theo mùa, bản đồ 5 làng muối.">
+  <title>Làng muối Bình Định 2026 | Kết nối tiêu thụ muối</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">🧂 Làng muối Bình Định</a>
+      <nav class="nav">
+        <a href="/">Trang chủ</a>
+        <a href="/#lang-muoi">Làng muối</a>
+        <a href="/#lich-san-xuat">Lịch sản xuất</a>
+        <a href="/#ban-do">Bản đồ</a>
+        <a href="/#ket-noi">Kết nối tiêu thụ</a>
+        <a href="/about">Giới thiệu</a>
+        <a class="btn-hotline" href="tel:0396241674">📞 Liên hệ HTK</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Làng muối Bình Định – hồi sinh sau mùa mưa lũ 2026</h1>
+      <p class="problem">
+        Tháng 11/2026, các làng muối Cát Minh và Cát Khánh (huyện Phù Cát) bị mưa lũ và bão số 9, số 10
+        phá hủy nặng nề: ruộng muối ngập bùn, kho muối tan mất trắng, bờ vùng sạt lở.
+        Lũ sông Kôn dâng cao tràn vào các vùng muối ven đầm Thị Nại thuộc Tuy Phước, khiến hàng trăm hộ
+        diêm dân mất sinh kế ngay trước vụ muối mới. Mất điện diện rộng 3–7 ngày sau bão làm tê liệt
+        bơm nước và cân điện tử tại các hợp tác xã muối. Website này giúp bà con diêm dân công khai
+        lịch sản xuất theo mùa và kết nối trực tiếp với thương lái, doanh nghiệp thu mua muối.
+      </p>
+      <p class="updated">Cập nhật: 09/11/2026</p>
+      <p class="mock-label">⚠️ Dữ liệu mô phỏng – cập nhật 09/11/2026</p>
+    </section>
+
+    <section id="lang-muoi" class="section">
+      <h2>🏘️ 5 làng muối Bình Định</h2>
+      <div id="village-list" class="card-grid">
+        <p class="loading">Đang tải dữ liệu làng muối…</p>
+      </div>
+    </section>
+
+    <section id="lich-san-xuat" class="section">
+      <h2>📅 Lịch sản xuất theo mùa</h2>
+      <p>Mùa nắng (tháng 1–8) là vụ muối chính; mùa mưa lũ 2026 (tháng 9–12) ruộng muối ngừng sản xuất, tập trung khắc phục thiệt hại.</p>
+      <div id="season-calendar" class="calendar"></div>
+      <div id="season-detail" class="season-detail"></div>
+    </section>
+
+    <section id="ban-do" class="section">
+      <h2>🗺️ Bản đồ vị trí 5 làng muối</h2>
+      <p>Bấm vào điểm trên bản đồ để xem thông tin làng muối (sơ đồ mô phỏng khu vực Phù Cát – Tuy Phước – Quy Nhơn).</p>
+      <div class="map-wrap">
+        <svg id="salt-map" viewBox="0 0 800 560" role="img" aria-label="Bản đồ mô phỏng 5 làng muối Bình Định">
+          <rect x="0" y="0" width="800" height="560" fill="#dff0fa"/>
+          <path d="M0,0 L520,0 C480,90 470,150 490,220 C510,290 560,330 600,380 C640,430 660,500 650,560 L0,560 Z" fill="#eef7e6" stroke="#9db98a" stroke-width="2"/>
+          <path d="M330,330 C380,320 420,360 410,420 C400,480 340,510 300,490 C260,470 250,400 280,365 C295,345 310,335 330,330 Z" fill="#bfe0f2" stroke="#7fb2d4" stroke-width="2"/>
+          <text x="310" y="425" class="map-label">Đầm Thị Nại</text>
+          <text x="700" y="60" class="map-label">Biển Đông</text>
+          <text x="150" y="90" class="map-label">H. Phù Cát</text>
+          <text x="130" y="430" class="map-label">H. Tuy Phước</text>
+          <text x="590" y="540" class="map-label">TP. Quy Nhơn</text>
+          <g id="map-markers"></g>
+        </svg>
+        <div id="map-info" class="map-info">Chọn một làng muối trên bản đồ…</div>
+      </div>
+    </section>
+
+    <section id="ket-noi" class="section">
+      <h2>🤝 Kết nối tiêu thụ muối</h2>
+      <p>Thương lái, doanh nghiệp hoặc nhà hảo tâm đăng ký thu mua / hỗ trợ muối cho diêm dân sau mưa lũ 2026. Thông tin lưu trên trình duyệt của bạn (localStorage).</p>
+      <form id="connect-form" class="connect-form" novalidate>
+        <div class="form-row">
+          <label>Họ và tên *
+            <input type="text" id="f-name" required maxlength="80" placeholder="Nguyễn Văn A">
+          </label>
+          <label>Số điện thoại *
+            <input type="tel" id="f-phone" required pattern="[0-9 +.-]{8,15}" placeholder="09xxxxxxxx">
+          </label>
+        </div>
+        <div class="form-row">
+          <label>Làng muối muốn kết nối *
+            <select id="f-village" required>
+              <option value="">-- Chọn làng muối --</option>
+            </select>
+          </label>
+          <label>Nhu cầu *
+            <select id="f-type" required>
+              <option value="Thu mua muối">Thu mua muối</option>
+              <option value="Hỗ trợ khắc phục lũ">Hỗ trợ khắc phục lũ</option>
+              <option value="Du lịch trải nghiệm làm muối">Du lịch trải nghiệm làm muối</option>
+            </select>
+          </label>
+        </div>
+        <div class="form-row">
+          <label>Số lượng dự kiến (tấn)
+            <input type="number" id="f-qty" min="0" max="100000" step="0.5" placeholder="VD: 10">
+          </label>
+          <label>Ghi chú
+            <input type="text" id="f-note" maxlength="200" placeholder="Loại muối, thời gian, yêu cầu khác…">
+          </label>
+        </div>
+        <button type="submit" class="btn-primary">Gửi đăng ký kết nối</button>
+        <p id="form-msg" class="form-msg" role="status"></p>
+      </form>
+
+      <h3>📋 Danh sách đăng ký đã lưu</h3>
+      <div id="connect-list" class="connect-list"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 <a href="https://zalo.me/0396241674" target="_blank" rel="noopener">HTK</a> · Hotline/Zalo: <a href="tel:0396241674">0396241674</a> · Email: <a href="mailto:htk.contact@gmail.com">htk.contact@gmail.com</a></p>
+      <p>Làng muối Bình Định – đồng hành cùng diêm dân sau mùa mưa lũ 2026 · Cập nhật: 09/11/2026</p>
+    </div>
+  </footer>
+  <script src="/app.js"></script>
+</body>
+</html>
